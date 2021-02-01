@@ -1,7 +1,14 @@
+body{
+  
+}
+.title{
+  text-align: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #d4bc9c;
 }
 
 .label {
