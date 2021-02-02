@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="display-4 text-center">Welcome to 8-bit Burger</h1>
     <p class="lead text-center">Go to the search bar below and create your burger!</p>
-    <img src="https://thumbs.gfycat.com/EcstaticUnderstatedIndianringneckparakeet.webp" alt="this slowpoke moves"  width=150 class="center"/>
+    <img src="https://thumbs.gfycat.com/EcstaticUnderstatedIndianringneckparakeet.webp" alt="Burger,fries and soda"  width=150 class="center"/>
 
   </div>
 </div>
@@ -19,7 +19,7 @@
       <form>
         <div class="form-group">
          <h1> <label for="ca">Burger Name:</label></h1>
-          <input type="text" id="ca" name="name">
+          <h4><input type="text" id="ca" name="name"></h4>
           <div class="form-group">
           </div>
 
@@ -28,9 +28,9 @@
     <div class="col">
 
       <div class="col burger-input">
-        <h4><input type="radio" name="eaten" value="1" id="eaten" checked> Eaten!</h4>
-        <h4><input type="radio" name="eaten" value="0" id="hungry"> Hungry</h4>
-        <button class="button"type="submit">Add Burger</button>
+        <input type="radio" name="eaten" value="1" id="eaten" checked> Eaten!
+        <input type="radio" name="eaten" value="0" id="hungry"> Need to try!
+        <button class="btns button"type="submit">Add Burger</button>
 
         </form>
       </div>
@@ -44,25 +44,25 @@
       <div class="col-6">
         <h2>Burgers Waitlist!</h2>
 
-        <ul class="waitstyle">
+       <h4> <ul class="waitstyle">
           {{#each burgers}}
           {{#unless eaten}}
           {{> burgers/burger-block eaten=true}}
           {{/unless}}
           {{/each}}
-        </ul>
+        </ul></h4>
 
       </div>
       <div class="col-6">
         <h2>Burgers Eaten!</h2>
 
-        <ul class="eatenstyle">
+       <h4><ul class="eatenstyle">
           {{#each burgers}}
           {{#if eaten}}
           {{> burgers/burger-block eaten=false}}
           {{/if}}
           {{/each}}
-        </ul>
+        </ul></h4> 
       </div>
     </div>
   </div>

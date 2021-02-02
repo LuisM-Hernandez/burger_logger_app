@@ -1,14 +1,14 @@
 body{
-  background-color: #B1A296;
+  background-color: #8f6f55;
   font-family: 'VT323', monospace;
 }
 
 @keyframes example {
  
   0%   {background-color: #e5cb7a;}
-  25%  {background-color: #32c704;}
-  50%  {background-color: #7a2b2b;}
-  75% {background-color: #ec3521;}
+  25%  {background-color: #32c704	;}
+  50%  {background-color: #965e5e;}
+  75% {background-color: #ec3521	;}
   100% {background-color: #e5cb7a;}
 
 }
@@ -19,8 +19,7 @@ body{
   animation-name: example;
   animation-duration: 15s;
   animation-iteration-count:infinite;
-  
-  
+
 }
 .intro-h{
   font-weight: 600;
@@ -40,7 +39,7 @@ font-size: larger;
 li {
   padding: 5px;
   margin: 5px;
-  background: lightskyblue;
+  background: rgb(206, 191, 198);
 }
 
 .label {
@@ -58,12 +57,12 @@ li {
 }
 
 
-.btn {
+.btns {
   width: 100px;
   height: 35px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid lightgreen;
+  border: 1px solid blueviolet;
   outline: none;
   transition: 1s ease-in-out;
 }
@@ -79,16 +78,16 @@ svg {
   transition: 1s ease-in-out;
 }
 
-.btn:hover {
+.btns:hover {
   transition: 1s ease-in-out;
-  background: #4F95DA;
+  background: #7e2222;
 }
 
-.btn:hover svg {
+.btns:hover svg {
   stroke-dashoffset: -480;
 }
 
-.btn span {
+.btns span {
   color: white;
   font-size: 18px;
   font-weight: 100;
