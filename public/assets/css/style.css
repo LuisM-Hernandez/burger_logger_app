@@ -1,15 +1,10 @@
 body{
   background-color: #B1A296;
-  /* background-image: url("../css/pixel-burger.png");
-  background-size: 2500px 1200px; */
   font-family: 'VT323', monospace;
-
-
 }
 
 @keyframes example {
-  /* from {background-color: red;}
-  to {background-color: yellow;} */
+ 
   0%   {background-color: #e5cb7a;}
   25%  {background-color: #32c704;}
   50%  {background-color: #7a2b2b;}
@@ -20,7 +15,7 @@ body{
 
 .jumb-style{
   
-  /* background-color: red; */
+  background-color: #e5cb7a;
   animation-name: example;
   animation-duration: 15s;
   animation-iteration-count:infinite;
@@ -28,7 +23,7 @@ body{
   
 }
 .intro-h{
-  color: rgb(79, 212, 79);
+  font-weight: 600;
 }
 .center {
   display: block;
@@ -37,15 +32,9 @@ body{
 
 }
 
-.jumboStyl{
-  /* background-color: #379683; */
-}
 
-.addBtn{
-  /* background-color: #379683; */
-}
-.title{
-  text-align: center;
+.burger-input{
+font-size: larger;
 }
 
 li {

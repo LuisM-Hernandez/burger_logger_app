@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // UPDATE
   const changeBurgersBtn = document.querySelectorAll('.change-burger');
 
+
   // Set up the event listener for the create button
   if (changeBurgersBtn) {
     changeBurgersBtn.forEach((button) => {
@@ -73,6 +74,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Reload the page so the user can see the new quote
         console.log('Created a new burger!');
         location.reload();
+      });
+    });
+  }
+
+  const deleteBurger = document.querySelectorAll('.delete-burger');
+
+  // Set up the event listener for the delete button
+  if (deleteBurger) {
+    deleteBurger.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        console.log('test');
+        // Grabs the id of the element that goes by the name, "id"
+        const id = e.target.getAttribute('data-id');
+
+        fetch(`/api/burgers/${id}`, {
+          method: 'DELETE',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+
+          // make sure to serialize the JSON body
+        }).then((response) => {
+          // Check that the response is all good
+          // Reload the page so the user can see the new quote
+          if (response.ok) {
+            console.log(`Deleted burger: ${id}`);
+            location.reload('/');
+          } else {
+            alert('something went wrong!');
+          }
+        });
       });
     });
   }
