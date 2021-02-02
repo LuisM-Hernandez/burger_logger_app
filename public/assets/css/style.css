@@ -1,6 +1,21 @@
 body{
   background-color: #B1A296;
 }
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.jumb-style{
+
+  background-color: red;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count:infinite;
+
+  
+}
 .center {
   display: block;
   margin-left: auto;
@@ -9,11 +24,11 @@ body{
 }
 
 .jumboStyl{
-  background-color: #379683;
+  /* background-color: #379683; */
 }
 
 .addBtn{
-  background-color: #379683;
+  /* background-color: #379683; */
 }
 .title{
   text-align: center;
@@ -22,7 +37,7 @@ body{
 li {
   padding: 5px;
   margin: 5px;
-  background: #97c496;
+  background: lightskyblue;
 }
 
 .label {
@@ -37,4 +52,41 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+
+.btn {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid lightgreen;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }
