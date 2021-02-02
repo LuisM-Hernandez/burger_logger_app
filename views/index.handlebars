@@ -1,10 +1,16 @@
-<h1 class="title">Welcome to Burger Logger App</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Welcome to Burger Logger App</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+
 
 <br><br><br>
 
 <div class="container">
   <div class="row">
-    
+
     <div class="col-6">
       <h2>Burgers Waitlist!</h2>
 
@@ -30,21 +36,42 @@
     </div>
   </div>
 </div>
+<br><br>
 
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h2>Add a burger</h2>
+      <form id="create-form">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-8">
+      
 
-<h2>Add a burger</h2>
-<form id="create-form">
+      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Order</h5>
+          <form>
+            <div class="form-group">
+              <label for="ca">Burger Name:</label>
+              <input type="text" id="ca" name="name">
+              <div class="form-group">
+                {{!-- <label for="slee">Cravings?</label><br> --}}
+          <p class="card-text">Write the name of your burger and choose if you are craiving it or</p>
+              </div>
+          <input type="radio" name="eaten" value="1" id="eaten" checked> Eaten!
+          <input type="radio" name="eaten" value="0" id="hungry"> Hungry
+          <button type="submit">Add Burger</button>
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="slee">Eaten?</label><br>
-    <input type="radio" name="eaten" value="1" id="eaten" checked> Eaten!<br>
-    <input type="radio" name="eaten" value="0" id="hungry"> Hungry
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
+</div>
+</div>
