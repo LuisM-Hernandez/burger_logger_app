@@ -11,8 +11,6 @@ Whenever a user submits a burger's name, your app will display the burger on the
 Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 Your app will store every burger in a database, whether devoured or not.
 
-  ![Employee_Tracker gif](assets/img/Employee_Tracker_Demo.gif)
-
 
   ## Table of Content
   
@@ -43,7 +41,7 @@ Your app will store every burger in a database, whether devoured or not.
 
    ## Links
 
-   App video: [Employee Tracker](https://drive.google.com/file/d/135luotJc6pR_zg2gZhgAaeoyiJVFTMjk/view?usp=sharing)
+   App deployment: [Burger Logger](https://gentle-crag-34867.herokuapp.com/)
 
 
 
